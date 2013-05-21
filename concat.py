@@ -1,7 +1,7 @@
 #[2013-04-25 04:35:52.348] [020800\00]1/RnhLmCellCPT rlibTraceTraceFunctions.cc:205 INFO:< Segmenting traces for key 117860156802909, 4 parts will follow >
 #[2013-04-25 04:35:52.348] [020800\00]1/RnhLmCellCPT rlibTraceTraceFunctions.cc:214 INFO:<key 117860156802909 part 1>"rnhAdmC[cellFroId 295]: AdmReq: RnhIfCellAdmissionReqD{cellFroId 295,ueRef 5803,rncModuleId 16,cause"RRCConnectionEstablishment",establishmentCause"rnhIfCellAdmEstCause_OriginatingInteractiveCall",admissionClass"rnhIfCellAdm_Other",requestClassDl"rnhIfCellAdm_guaranteed",requestClassUl"rnhIfCellAdm_guaranteed",reqPriority""
 #[2013-04-25 04:35:52.348] [020800\00]1/RnhLmCellCPT rlibTraceTraceFunctions.cc:214 INFO:<key 117860156802909 part 2>"rnhIfCellArp_level1",lowestPriorityLevel"rnhIfCellArp_level3",preemptionCapability"shallNotTriggerPreemption",currentAseDl 0,reqAseDl 49,currentAseUl 0,reqAseUl 49,reqActiveSetSize 1,selectedRLinRLs 1,currentSfDl 0,reqSfDl 128,currentCodeNo -1,currentTimePosition -1,reqTimePosition -1,nonPreferredTimePosition 0,slotFormatC"
-#[2013-04-25 04:35:52.348] [020800\00]1/RnhLmCellCPT rlibTraceTraceFunctions.cc:214 INFO:<key 117860156802909 part 3>"apable"slotFormat_NotValid",currentSfUl 0,reqSfUl 64,currentSfUlEdch 0,reqSfUlEdch 0,compModeRes 0,physicalHsChan 0,eulCellType"rnhIfCellEul_NotValid",currentConnIs2msEul false,lowestDchRateAtEulCongestion 0,currentIubGbrBandwidthDl 0,reqIubGbrBandwidthDl 29,currentIubGbrBandwidthUl 0,reqIubGbrBandwidthUl 31,speechOnly"spe"
+#[2013-04-25 04:35:52.348] [020800\00]1/RnhLmCellCPT rlibTraceTraceFunctions.cc:214 INFO:<key 117860156802909 part 3>"apable"slotFormat_NotValid",currentSfUl 0,reqSfUl 64,currentSfUlEdch 0,reqSfUlEdch 0,compModeRes 0,physicalHsChan 0,eulCellType"rnhIfCellEul_NotValid",currentConnIs2msEul false,lowestDchRateAtEulConges -tion 0,currentIubGbrBandwidthDl 0,reqIubGbrBandwidthDl 29,currentIubGbrBandwidthUl 0,reqIubGbrBandwidthUl 31,speechOnly"spe"
 #[2013-04-25 04:35:52.348] [020800\00]1/RnhLmCellCPT(1/ADMISSION_REJECT_CELL) ../RnhAdmC.cpp:888 TRACE5:[cellFroId 295] <key 117860156802909 part 4>"echNotValid",currentRcState 0,reqRcState 1,gbrDl 0,gbrUl 0,eSrbIndex -1,reqConnIsHs 0}: RejectReason: RbsDlHwResources, pmEventValueAtFailure 0, pmEventAdmPolicyLevel 10000"
 #[2013-04-25 04:35:52.348] [020800\00]1/RnhLmCellCPT(1/ADMISSION_CELL) ../RnhAdmC.cpp:4010 TRACE7:[cellFroId 295] rnhAdmC[cellFroId 295]: signal data: int 867583522
 
@@ -14,6 +14,9 @@
 # usage python concat.py infile outfile
 #
 #-----------------------------------------------------------------------------------------------------------------------------------
+
+# TTD
+# - could add a verbose/debug flag
 
 
 import re
