@@ -32,14 +32,14 @@ def main():
     sys.exit()
   infile = sys.argv[1]
   outfile = sys.argv[2]
-  print "Concatenate segmented traces \ninfile: %s \noutfile: %s"%(infile,outfile)
+  print "\nConcatenate segmented traces \ninfile: %s \noutfile: %s"%(infile,outfile)
   if  not(os.path.exists(infile)):
     print "infile does not exist !!"
     sys.exit() 
      
   concat(infile,outfile)
   end = datetime.datetime.now()
-  print "starting: %s" %(start)
+  print "\nstarting: %s" %(start)
   print "finished: %s" %(end)
   print "duration: %s" % (end - start)
   
