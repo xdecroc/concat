@@ -42,8 +42,7 @@ def main():
   print "\nstarting: %s" %(start)
   print "finished: %s" %(end)
   print "duration: %s" % (end - start)
-  
-
+ 
 
 
 def concat(infile,outfile ):
